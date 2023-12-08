@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <title>MyPortfolio</title>
+</head>
+
+<body>
+  <!-- Header Section  -->
+
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Gauri</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list grid">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">
+              <i class="uil uil-estate nav__icon"></i>Home
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">
+              <i class="uil uil-user nav__icon"></i>About
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#skills" class="nav__link">
+              <i class="uil uil-file-alt nav__icon"></i>Skills
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#projects" class="nav__link">
+              <i class="uil uil-briefcase-alt nav__icon"></i>Projects
+            </a>
+          </li> 
+           <li class="nav__item">
+            <a href="#coding" class="nav__link">
+              <i class="uil uil-arrow nav__icon"></i>Coding
+            </a>
+          </li> 
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">
+              <i class="uil uil-message nav__icon"></i>Contact
+            </a>
+          </li>
+        </ul>
+        <i class="uil uil-times nav__close" id="nav-close"></i>
+      </div>
+
+      <div class="nav__btns">
+        <!-- Theme change button  -->
+        <i class="uil uil-moon change__theme" id="theme__button"></i>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="uil uil-apps"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- home section  -->
+
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__content grid">
+          <div class="home__social">
+            <a href="https://www.linkedin.com/in/gauri-katti-099370210/" target="_blank" class="home__social-icon">
+              <i class="uil uil-linkedin-alt"></i>
+            </a> 
+            <a href="https://replit.com/@gauri2806" target="_blank" class="home__social-icon">
+              <i class="uil uil-dribbble"></i>
+            </a> 
+      <a href="https://github.com/gauri2806" target="_blank" class="home__social-icon">
+              <i class="uil uil-github-alt"></i>
+            </a>
+          </div>
+
+          <div class="home__img">
+            <svg class="home__blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink">
+              <mask id="mask0" mask-type="alpha">
+                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+              </mask>
+              <g mask="url(#mask0)">
+                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
+                <image class="home__blob-img" x="12" y="18" xlink:href="introimg.png" />
+              </g>
+            </svg>
+          </div>
+
+          <div class="home__data">
+            <h1 class="home_title">Hi, I'm Gauri</h1>
+            <h3 class="home_subtitle">Web Developer</h3>
+            <p class="home_description">
+              Motivated to advance and expand my skillset through constant learning and challenging projects.
+            </p>
+            <a href="#contact" class="button button__flex">
+              Contact Me<i class="uil uil-message button__icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="home__scroll">
+          <a href="#about" class="home__scroll-button button__flex">
+            <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
+            <span class="home__scroll-name">Scroll down</span>
+            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- about section  -->
+
+    <section class="about section" id="about">
+      <h2 class="section__title">About Me</h2>
+      <span class="section__subtitle">My Introduction</span>
+
+      <div class="about__container container grid">
+        <img src="AboutImg.png" alt="" class="about__img" />
+
+        <div class="about__data">
+          <p class="about__description">
+            Hi, I am Gauri Katti, currently pursuing B.Tech from Shri Guru Gobind Singhji Institute of Engineering & Technology, Nanded. I am a Full Stack Web Developer.
+          </p>
+          <div class="about__buttons">
+            <a download="Gauri_Katti_resume" href="Gauri_Katti_resume.pdf" class="button button__flex">
+              Download Resume<i class="uil uil-download-alt button__icon"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills section  -->
+
+    <section class="skills section" id="skills">
+      <h2 class="section__title">Skills</h2>
+      <span class="section__subtitle">My technical skills</span>
+
+      <div class="skills__container container grid">
+        <div>
+          <!-- Skills 1 -->
+          <div class="skills__content skills__open">
+            <div class="skills__header">
+              <i class="uil uil-brackets-curly skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">Frontend Developer</h1>
+                <span class="skills__subtitle">I have worked on following frontend Technologies</span>
+              </div>
+
+              <i class="uil uil-angle-down skills__arrow"></i>
+
+            </div>
+
+            <div class="skills__list grid">
+
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">HTML</h3>
+                  <span class="skills__number">80%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__html"></span>
+                </div>
+
+              </div>
+
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">CSS</h3>
+                  <span class="skills__number">75%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__css"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Bootstrap</h3>
+                  <span class="skills__number">80%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__bootstrap"></span>
+                </div>
+
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">JavaScript</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__js"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">React JS</h3>
+                  <span class="skills__number">60%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__reactjs"></span>
+                </div>
+
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Next JS</h3>
+                  <span class="skills__number">80%</span>
+                </div>
+
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__nextjs"></span>
+                </div>
+
+              </div>
+
+              
+
+
+            </div>
+          </div>
+
+          <!-- skills 2  -->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-server-network skills__icon"></i>
+
+              <div>
+                <h1 class="skills__title">Backend Developer</h1>
+                <span class="skills__subtitle">I can work on these backend Technologies</span>
+              </div>
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">PHP</h3>
+                  <span class="skills__number">50%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__php"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Python</h3>
+                  <span class="skills__number">40%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__python"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Node JS</h3>
+                  <span class="skills__number">60%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__nodejs"></span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Express JS</h3>
+                  <span class="skills__number">60%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__express"></span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- skills 3  -->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-arrow skills__icon"></i>
+              <div>
+                <h1 class="skills__title">Programmer</h1>
+                <span class="skills__subtitle">I'm familiar with these programming languages.</span>
+              </div>
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">C++</h3>
+                  <span class="skills__number">80%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__cpp"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">C</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__c"></span>
+                </div>
+              </div>
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Python</h3>
+                  <span class="skills__number">50%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__pyth"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- skills 4  -->
+          <div class="skills__content skills__close">
+            <div class="skills__header">
+              <i class="uil uil-swatchbook skills__icon"></i>
+              <div>
+                <h1 class="skills__title">Designer</h1>
+                <span class="skills__subtitle">I use these applications for designing</span>
+              </div>
+              <i class="uil uil-angle-down skills__arrow"></i>
+            </div>
+
+            <div class="skills__list grid">
+              <div class="skills__data">
+                <div class="skills__titles">
+                  <h3 class="skills__name">Figma</h3>
+                  <span class="skills__number">70%</span>
+                </div>
+                <div class="skills__bar">
+                  <span class="skills__percentage skills__figma"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Qualifcation Section  -->
+
+    <section class="qualification section">
+      <h2 class="section__title">Qualifications</h2>
+      <span class="section__subtitle">My journey as a student</span>
+
+      <div class="qualification__container container">
+        <div class="qualification__tabs">
+          <div class="qualification__button button__flex qualification__active" data-target="#education">
+            <i class="uil uil-graduation-cap qualification__icon"></i>
+            Education
+          </div>
+          <div class="qualification__button button__flex" data-target="#experience">
+            <i class="uil uil-briefcase-alt qualification__icon"></i>
+            Experience
+          </div>
+        </div>
+
+        <div class="qualification__sections">
+          <!-- Qualfication content 1 -->
+          <div class="qualification__content qualification__active" data-content id="education">
+            <!-- Qualfication 1 -->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+              <div>
+                <h3 class="qualification__title">B.Tech - CSE</h3>
+                <span class="qualification__subtitle">SGGSIE&T, Nanded, Maharashtra</span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i>
+                  2020 - 2024
+                </div>
+              </div>
+            </div>
+
+            <!-- Qualfication 2 -->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">12th Class</h3>
+                <span class="qualification__subtitle">Sri Chaitanya Jr. College, Hyderabad, Telangana</span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i>
+                  2018 - 2020
+                </div>
+              </div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <!-- Qualfication 3 -->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <!-- <span class="qualification__line"></span> -->
+              </div>
+              <div>
+                <h3 class="qualification__title">10th Class</h3>
+                <span class="qualification__subtitle">SSRVM, Osmanabad, Maharashtra</span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i>
+                  2017- 2018
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Qualfication content 2 -->
+          <div class="qualification__content" data-content id="experience">
+
+            
+
+            <!-- Qualfication 1 -->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+              <div>
+                <h3 class="qualification__title"> Robotics For Next Generation(RNXG) </h3>
+                <span class="qualification__subtitle">SGGSIE&T, Nanded, Maharashtra.</span><br />
+                <span class="qualification__subtitle">Core Member</span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i>
+                  Sept 2022 - Present
+                </div>
+              </div>
+            </div>
+
+            <!-- Qualfication 2 -->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">
+                  Codechef Chapter
+                </h3>
+                <span class="qualification__subtitle">SGGSIE&T, Nanded, Maharashtra.</span><br />
+                <span class="qualification__subtitle">Core Member</span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i>
+                  Aug 2022 - Dec 2022
+                </div>
+              </div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+            </div>
+
+            <!-- Qualfication 3 -->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+              <div>
+                <h3 class="qualification__title">Codechef Chapter</h3>
+                <span class="qualification__subtitle">SGGSIE&T, Nanded, Maharashtra.</span><br />
+                <span class="qualification__subtitle">Executive Member</span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i>
+                  Nov 2021 - Aug 2022
+                </div>
+              </div>
+            </div>
+
+            <!-- Qualfication 4 -->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Training & Placement Cell</h3>
+                <span class="qualification__subtitle">SGGSIE&T, Nanded, Maharashtra.</span><br />
+                <span class="qualification__subtitle">Web Developer & Content Creator</span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i>
+                  Nov 2021 - May 2022
+                </div>
+              </div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span> 
+              </div>
+            </div>
+
+             <!-- Qualfication 5 -->
+            <div class="qualification__data">
+              <div></div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <span class="qualification__line"></span>
+              </div>
+              <div>
+                <h3 class="qualification__title">Sankalp</h3>
+                <span class="qualification__subtitle">SGGSIE&T, Nanded, Maharashtra.</span><br />
+                <span class="qualification__subtitle">Student Volunteer</span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i>
+                  Mar 2021 - Oct 2021
+                </div>
+              </div>
+            </div>
+
+            <!-- Qualfication 6 -->
+            <div class="qualification__data">
+              <div>
+                <h3 class="qualification__title">Pragyaa</h3>
+                <span class="qualification__subtitle">SGGSIE&T, Nanded, Maharashtra.</span><br />
+                <span class="qualification__subtitle">Associate Web Developer & Content Creator</span>
+                <div class="qualification__calender">
+                  <i class="uil uil-calendar-alt"></i>
+                  Feb 2021 - May 2021
+                </div>
+              </div>
+              <div>
+                <span class="qualification__rounder"></span>
+                <!-- <span class="qualification__line"></span> -->
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section -->
+
+    <section class="projects section" id="projects">
+      <h2 class="section__title">Projects</h2>
+      <span class="section__subtitle">Most recent works</span>
+      <div class="projects__container container grid"> 
+
+        <!-- projects 1 -->
+
+         <div class="projects__content">
+          <div>
+            <!-- <span class="projects__icon"><img src="DesktopAssistant.png" alt=""></span> -->
+            <h3 class="projects__title">Desktop Assistant</h3>
+          </div>
+          
+          <div>
+            <span class="
+                  button button__flex button__small button__link
+                  projects__button
+                ">
+              <a href="https://github.com/gauri2806/Desktop-Assistant" target="_blank">
+                View Project
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </span>
+          </div>
+        </div> 
+
+        <!-- projects 2 -->
+
+        <div class="projects__content">
+          <div>
+            <!-- <span class="projects__icon"><img src="ChromeExtension.png" alt=""></span> -->
+            <h3 class="projects__title">Chrome Extension</h3>
+          </div>
+
+          <div>
+            <span class="
+                  button button__flex button__small button__link
+                  projects__button
+                ">
+              <a href="https://github.com/gauri2806/Google-Chrome-Extension" target="_blank">
+                View Project
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </span>
+          </div>
+        </div> 
+
+        <!-- projects 3 -->
+
+         <div class="projects__content">
+          <div>
+            <!-- <span class="projects__icon"><img src="" alt=""></span> -->
+            <h3 class="projects__title">Mern Chat Application</h3>
+          </div>
+
+          <div>
+            <span class="
+                  button button__flex button__small button__link
+                  projects__button
+                ">
+              <!-- <a href="https://github.com/gauri2806/TicTacToeGame" target="_blank"> -->
+                View Project
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </span>
+          </div>
+        </div> 
+
+        <!-- projects 4 -->
+
+         <div class="projects__content">
+          <div>
+            <!-- <span class="projects__icon"><img src="DigitalClock.png" alt=""></span> -->
+            <h3 class="projects__title">Digital Clock</h3>
+          </div>
+
+          <div>
+            <span class="
+                  button button__flex button__small button__link
+                  projects__button
+                ">
+              <a href="https://github.com/gauri2806/DigitalClock" target="_blank">
+                View Project
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </span>
+          </div>
+        </div> 
+      
+      
+        </div>
+    </section>
+
+    <!-- Coding section-->
+
+
+    <section class="coding section" id="coding">
+      <h2 class="section__title">Coding</h2>
+      <span class="section__subtitle">Where do I practice?</span>
+
+      <div class="coding__container container grid"> 
+
+
+        <!-- Coding 1 -->
+
+         <div class="coding__content">
+          <div>
+            <span class="iconify coding__icon" data-icon="simple-icons:codechef" data-flip="horizontal"></span>
+            <h3 class="coding__title">Codechef</h3>
+          </div>
+
+          <div>
+            <span class="
+                  button button__flex button__small button__link
+                  coding__button
+                ">
+              <a href="https://www.codechef.com/users/gaur_i28" target="_blank">
+                Visit profile
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </span>
+          </div>
+        </div> 
+
+        <!-- Coding 2 -->
+
+         <div class="coding__content">
+          <div>
+            <span class="iconify coding__icon" data-icon="simple-icons:codeforces" data-flip="horizontal"></span>
+            <h3 class="coding__title">Codeforces</h3>
+          </div>
+
+          <div>
+            <span class="
+                  button button__flex button__small button__link
+                  coding__button
+                ">
+              <a href="https://codeforces.com/profile/gauri_28" target="_blank">
+                Visit profile
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </span>
+          </div>
+        </div> 
+
+        <!-- Coding 3 -->
+
+         <div class="coding__content">
+          <div>
+            <span class="iconify coding__icon" data-icon="cib:leetcode" data-flip="horizontal"></span>
+            <h3 class="coding__title">Leetcode</h3>
+          </div>
+
+          <div>
+            <span class="
+                  button button__flex button__small button__link
+                  coding__button
+                ">
+              <a href="https://leetcode.com/gaur_i28/" target="_blank">
+                Visit profile
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </span>
+          </div>
+        </div> 
+
+        <!-- Coding 4 -->
+
+        <div class="coding__content">
+          <div>
+            <span class="iconify coding__icon" data-icon="simple-icons:hackerrank"></span>
+            <h3 class="coding__title">HackerRank</h3>
+          </div>
+
+          <div>
+            <span class="
+                  button button__flex button__small button__link
+                  coding__button
+                ">
+              <a href="https://www.hackerrank.com/2020bcs121" target="_blank">
+                Visit profile
+                <i class="uil uil-arrow-right button__icon"></i>
+              </a>
+            </span>
+          </div>
+        </div> 
+      
+      </div>
+    </section>
+
+    <!-- Contact section  -->
+
+    <section class="contact section" id="contact">
+      <h2 class="section__title">Contact Me</h2>
+      <span class="section__subtitle">Get in touch</span>
+
+      <div class="contact__container container grid">
+        <div>
+          
+          <div class="contact__information">
+            <i class="uil uil-phone contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Call Me</h3>
+              <span class="contact__subtitle">8080324256</span>
+            </div>
+          </div>
+
+          <div class="contact__information">
+            <i class="uil uil-envelope contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Email</h3>
+              <span class="contact__subtitle">gauikatti2806@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="contact__information">
+            <i class="uil uil-linkedin contact__icon"></i>
+            <div>
+              <h3 class="contact__title">LinkedIn</h3>
+              <span class="contact__subtitle">www.linkedin.com/in/gauri-katti-099370210/</span>
+            </div>
+          </div>
+
+           <!-- <a href="https://www.linkedin.com/in/gauri-katti-099370210/" target="_blank" class="home__social-icon">
+              <i class="uil uil-linkedin-alt"></i>
+            </a> -->
+
+          <div class="contact__information">
+            <i class="uil uil-map-marker contact__icon"></i>
+            <div>
+              <h3 class="contact__title">Location</h3>
+              <span class="contact__subtitle">Osmanabad, Maharashtra, India</span>
+            </div>
+          </div>
+        </div>
+
+        <form action="" class="contact__form grid">
+          <div class="contact__inputs grid">
+            
+            <div class="contact__content">
+              <label for="" class="contact__label">Name</label>
+              <input type="text" class="contact__input">
+            </div>
+
+            <div class="contact__content">
+              <label for="" class="contact__label">Email</label>
+              <input type="email" class="contact__input">
+            </div>
+
+            <div class="contact__content">
+              <label for="" class="contact__label">Message</label>
+              <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+            </div>
+            
+
+
+            <div>
+              <a href="#" class="button button__flex">
+                Send Message
+                <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+
+          </div>
+        </form>
+      </div>
+
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+  <script src="swiper-bundle.min.js"></script>
+  <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+</body>
+
+</html>
