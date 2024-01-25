@@ -44,24 +44,37 @@ skillsHeader.forEach((el)=>{
 
 // Qualifications 
 
-const tabs= document.querySelectorAll('[data-target]'),
-    tabContents= document.querySelectorAll('[data-content]')
+// Qualifications 
 
-tabs.forEach(tab=>{
-    tab.addEventListener('click', ()=>{
-        const target= document.querySelector(tab.dataset.target)
+const tabs = document.querySelectorAll('[data-target]'),
+      tabContents = document.querySelectorAll('[data-content]');
 
-        tabContents.forEach(tabContent=>{
-            tabContent.classList.remove('qualification__active')
-        })
-        target.classList.add('qualification__active')
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.target);
 
-        tab.forEach(tab=>{
-            tab.classList.remove('qualification__active')
-        })
-        tab.classList.add('qualification__active')
-    })
-})
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('qualification__active');
+        });
+
+        tabs.forEach(t => {
+            t.classList.remove('qualification__active');
+            t.style.color = ''; // Reset color for all tabs
+        });
+
+        tab.classList.add('qualification__active');
+        target.classList.add('qualification__active');
+
+        // Toggle colors
+        if (tab.dataset.target === '#education') {
+            tab.style.color = 'blue';
+        } else if (tab.dataset.target === '#experience') {
+            tab.style.color = 'blue';
+        }
+    });
+});
+
+
 
 
 // Dark Light Theme 
